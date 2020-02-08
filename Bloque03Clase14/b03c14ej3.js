@@ -12,12 +12,12 @@
 const nombre = "Mariana";
 let comida = "Panini";
 let juego = "Zelda BoW";
-console.log("Me llamo: "+nombre);
-console.log("Hoy comí: "+comida);
+console.log(`Me llamo: ${nombre}`);
+console.log(`Hoy comí: ${comida}`);
 comida = "Aguachile";
-console.log("Mañana comeré: "+comida);
-console.log("Ahorita ando jugando: "+juego);
+console.log(`Mañana comeré: ${comida}`);
+console.log(`Ahorita ando jugando: ${juego}`);
 juego = "Salem o Catan";
-console.log("Cuando lo acabe, jugaré: "+juego);
+console.log(`Cuando lo acabe, jugaré: ${juego}`);
 
 //eof
