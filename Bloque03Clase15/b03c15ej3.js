@@ -8,6 +8,7 @@
 function getRandomNumber(min, max) {
     return Math.floor( Math.random() * (max-min+1) ) + min;
 }
+//tu código va aquí vvv
 function getRandomDecimals(number, decimals){
     console.log(`Numero: ${number}`);
     console.log(`Trunca todos los decimales (trunc): ${Math.trunc(number)}`);
@@ -18,7 +19,7 @@ function getRandomDecimals(number, decimals){
 }
 const randomNumber = getRandomNumber(1000000000, 9999999999) / 1000000000;
 const randomDecimals = getRandomNumber(1, 8);
-//tu código va aquí vvv
+
 getRandomDecimals(randomNumber,randomDecimals)
 //tu código va aquí ^^^
 
