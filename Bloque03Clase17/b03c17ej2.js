@@ -7,37 +7,26 @@
 
 let a = 2;
 const b = Boolean(
-    (
-        (
-            (a = undefined)
-        ) || (
-            "hola"
-        ) || (
-            (
-                -Infinity
-            ) && !(
-                ""
-            )
-        ) && (
-            (a < 5)
-        )
-    ) && (
-        (10 <= 10.5)
-    ) || (
-        !(
-            ("helicoptero" < "helipuerto")
-        )
-    ) && !(
-        (
-            0
-        ) || (
-            null
-        ) && (
-            ("100" === 100)
-        )
-    ) && (
-        (0 !== false)
-    )
+    (a = undefined || "hola" || (-Infinity && !"") && (a < 5))
+    /*   undefined || "hola" ||        true        &&  undefined < 5  */
+    /*             "hola"    ||        true        &&         false   */
+    /*                      "hola"                 &&         false   */
+    /*                      "hola"                 &&         false   */
+    /*                                            false               */
+    
+    /*false*/&& (10 <= 10.5) || !("helicoptero" < "helipuerto") 
+    /*false  &&    true      || !(            false           )         */
+    /*       false           ||    true                                 */
+    /*                      true                                        */
+    /*true*/&& !(0 || null && ("100" === 100)) && (0 !== false)
+    /*true  && !(0 || null &&       false    ) &&    true     */
+    /*true  && !(  null    &&       false    ) &&    true     */
+    /*true  && !(  null    &&       false    ) &&    true     */
+    /*true  && !(         null               ) &&    true     */
+    /*true  &&            true                 &&    true     */
+    /*     true                                &&    true     */
+    /*                                        true     */
+    /* RESPUESTA FINAL: TRUE */
 );
 
 console.log("El valor final es: "+b);
