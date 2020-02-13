@@ -11,7 +11,6 @@ const b = Boolean(
     /*   undefined || "hola" ||        true        &&  undefined < 5  */
     /*             "hola"    ||        true        &&         false   */
     /*                      "hola"                 &&         false   */
-    /*                      "hola"                 &&         false   */
     /*                                            false               */
     
     /*false*/&& (10 <= 10.5) || !("helicoptero" < "helipuerto") 
