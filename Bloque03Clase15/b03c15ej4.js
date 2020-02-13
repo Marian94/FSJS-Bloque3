@@ -26,6 +26,7 @@ console.log(a);
  * -1
  * 1 /= -1
  * -1
+ * (-1+true)=0
  *  */
 console.log("hola " + (a + true) + " adiós");
 
