@@ -21,22 +21,22 @@ console.log(tipo);
 //tu código va aquí vvv
 switch (tipo){
     case "number":
-        console.log("El dato ${dato} es de tipo numero");
+        console.log(`El dato ${dato} es de tipo numero`);
     break;
     case "string":
-        console.log("El dato ${dato} es de tipo string");
+        console.log(`El dato "${dato}" es de tipo string`);
     break;
     case "boolean":
-        console.log("El dato ${dato} es de tipo booleano");
+        console.log(`El dato ${dato} es de tipo booleano`);
     break;
     case "undefined":
-        console.log("El dato ${dato} es de tipo undefined")
+        console.log(`El dato ${dato} es de tipo undefined`)
     break;
     case "symbol":
-        console.log("El dato ${dato} es de tipo symbol")
+        console.log(`El dato ${dato} es de tipo symbol`)
     break;
     default:
-        console.log("El dato ${dato} es de tipo object");
+        console.log(`El dato ${dato} es de tipo object`);
     break;
 }
 
