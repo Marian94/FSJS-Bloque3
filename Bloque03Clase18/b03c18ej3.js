@@ -20,7 +20,6 @@ function messageClick() {
         //Se verifica que los datos ingresados sean validos no incluyan numeros ni caracteres especiales)
         if(validNumber.test(calif.value) === true ){
             const calificacion = Math.round(parseFloat(calif.value)); 
-            alert(calificacion);
             if(calificacion <= 100){
                 message = (calificacion >= 0 && calificacion <= 9) ? "Vete a turismo"
                 : (calificacion >= 10 && calificacion <= 59) ? "tronaste"
