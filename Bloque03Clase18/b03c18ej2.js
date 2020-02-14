@@ -30,7 +30,7 @@ function messageClick() {
     if(calif.value.replace(/ /g, "") !== ""){
         //Se verifica que los datos ingresados sean validos no incluyan numeros ni caracteres especiales)
         if(validNumber.test(calif.value) === true ){
-            const calificacion = parseFloat(calif.value);
+            const calificacion = Math.round(parseFloat(calif.value)); 
             if(calificacion <= 100){
                 if (calificacion >= 0 && calificacion <= 9 ) message = "Vete a turismo";
                 else if (calificacion >= 10 && calificacion <= 59) message = "tronaste";
@@ -40,7 +40,7 @@ function messageClick() {
             }else{
                 message = "La calificacion ingresada es mayor a 100";
             }
-            alert(message);
+            r.innerHTML = message;
         } //if validNumber
         else{
             //Se despliega un mensaje de error

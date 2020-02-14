@@ -19,9 +19,23 @@ function messageClick() {
     b = term2.value;
 
     //asigna r.innerHTML al valor que quieras imprimir en pantalla.
-
+    let typeA = parseFloat(a);
+    let typeB = parseFloat(b);
     //tu código va aquí vvv
+    let message = "";
+    message += `${typeof typeA}  ${typeA}\n`;
+    message += `${typeof typeB}  ${typeB}`;
+    
+    /*
+    if( a < b){
+        message += `${b} es el valor mayor.`;
+    }else if (a > b){
+        message += `${a} es el valor mayor.`;
+    }else{
+        message += `${a} y ${b} es el mismo valor.`;
+    }*/
 
+    r.innerHTML = message;
     //tu código va aquí ^^^
 }
 
