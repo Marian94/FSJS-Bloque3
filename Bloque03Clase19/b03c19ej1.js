@@ -6,7 +6,9 @@
 */
 
 //tu código va aquí vvv
-
+for(let i =1; i<=20; i++){
+    console.log(i);
+}
 //tu código va aquí ^^^
 
 //eof

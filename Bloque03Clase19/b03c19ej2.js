@@ -7,6 +7,9 @@
 
 //tu código va aquí vvv
 
+for(let i =1; i<=20; i++){
+    (!((i%2) === 0)) ? console.log(i): "";
+}
 //tu código va aquí ^^^
 
 //eof
