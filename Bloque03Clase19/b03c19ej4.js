@@ -20,9 +20,9 @@ function messageClick(){
 
     //Se verifica que los datos ingresados sean numeros
     if(checkNumber.test(op1) && checkNumber.test(op2)){
-        alert(`${op1} ${signo} ${op2} = ${eval(str)}`);   
+        document.getElementById("divresultados").innerHTML = `${op1} ${signo} ${op2} = ${eval(str)}`;
     }else{
-        alert("Porfavor ingrese un numero")
+        document.getElementById("divresultados").innerHTML = "Porfavor ingrese un numero";
     }
     
 }
