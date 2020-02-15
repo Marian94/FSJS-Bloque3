@@ -25,12 +25,12 @@ function messageClick() {
             let tabla = "";
             if(numeroMul <= 10){
                for(let i = 0; i<=10; i++){
-                    tabla += `${n} x ${i} = ${n*i}\n`;
+                    tabla += `${n} x ${i} = ${n*i}<br>`;
                }
             }else{
                 tabla = "El numero a multiplicar ingresada es mayor a 10";
             }
-            alert(tabla);
+            res.innerHTML = tabla
         } //if validNumber
         else{
             //Se despliega un mensaje de error
