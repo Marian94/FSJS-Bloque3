@@ -26,9 +26,9 @@ function messageClick() {
     //Valid number es la expresion regular que verificara que lo que ingrese el usuario sea coherente a lo que se este pidiendo, en este caso solo se pueden ingresar numeros y valores flotantes
     const validNumber = /^-?\d+(?:.\d+)?$/g;
     let message = "Porfavor, evita:\n*Escribir mal un número\n*Dejar la calificacion en blanco\n*Escribir letras y/o caracteres especiales"; 
-    //Se verifica que el nombre contenga datos
+    //Se verifica que la calificacion no se deje en blanco
     if(calif.value.replace(/ /g, "") !== ""){
-        //Se verifica que los datos ingresados sean validos no incluyan numeros ni caracteres especiales)
+        //Se verifica que los datos ingresados sean validos (numeros y flotantes)
         if(validNumber.test(calif.value) === true ){
             const calificacion = Math.round(parseFloat(calif.value)); 
             if(calificacion <= 100){

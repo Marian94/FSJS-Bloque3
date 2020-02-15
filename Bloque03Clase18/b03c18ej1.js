@@ -19,21 +19,27 @@ function messageClick() {
     b = term2.value;
 
     //asigna r.innerHTML al valor que quieras imprimir en pantalla.
-    let typeA = parseFloat(a);
-    let typeB = parseFloat(b);
     //tu código va aquí vvv
+
+    //checkText es la expresion regular que verificara que lo que ingrese el usuario sea de tipo numero o string
+    const checkText = /^-?\d+(?:\.\d+)?$/;
     let message = "";
-    message += `${typeof typeA}  ${typeA}\n`;
-    message += `${typeof typeB}  ${typeB}`;
+    let number1;
+    let number2;
+    //Se verifica que los datos ingresados sean numeros
+    number1 = (checkText.test(a)) ? true : false;
+    number2 = (checkText.test(b)) ? true : false;
     
-    /*
+    message += `${a} numero: ${number1}   /`;
+    message += `${b} numero: ${number2}   /`;
+
     if( a < b){
         message += `${b} es el valor mayor.`;
     }else if (a > b){
         message += `${a} es el valor mayor.`;
     }else{
         message += `${a} y ${b} es el mismo valor.`;
-    }*/
+    }
 
     r.innerHTML = message;
     //tu código va aquí ^^^

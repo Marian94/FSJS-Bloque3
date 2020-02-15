@@ -18,7 +18,6 @@ function messageClick(){
     const str = op1 + signo + op2;
     const checkNumber = /^-?\d+(?:\.\d+)?$/;
 
-    let message = "";
     //Se verifica que los datos ingresados sean numeros
     if(checkNumber.test(op1) && checkNumber.test(op2)){
         alert(`${op1} ${signo} ${op2} = ${eval(str)}`);   
