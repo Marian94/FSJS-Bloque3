@@ -12,7 +12,25 @@
 */
 
 //tu código va aquí vvv
+const Peliculas = new Set();
 
+Peliculas.add("Mary and Max");
+Peliculas.add("Porco Rosso");
+Peliculas.add("Lord of the rings");
+Peliculas.add("Camino a la felicidad");
+Peliculas.add("Cumbres borrascosas");
+Peliculas.add("Invictus");
+Peliculas.add("Cinema Paradiso");
+Peliculas.add("Big Fish");
+Peliculas.add("Good Father");
+Peliculas.add("Shrek");
+Peliculas.add("Shrek 2");
+Peliculas.add("Shrek 3");
+Peliculas.add("Joker");
+Peliculas.add("Parasite");
+Peliculas.add("Ad Astra");
+
+console.log(Peliculas.has("Porco Rosso"));
 //tu código va aquí ^^^
 
 //eof

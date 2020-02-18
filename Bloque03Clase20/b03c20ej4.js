@@ -40,12 +40,13 @@ console.log("-------------------------");
 //El siguiente arreglo debe contener sólo las partes de un coche.
 //Agrega y borra lo que haga falta, usando sólo una función, una vez.
 const coche = ["llantas", "rines", "alas", "velas", "caldera", "parabrisas", "motor", "escape"];
-const newCoche = [];
+let newCoche = [];
 for(i of coche){
     if(!i.includes("alas") && !i.includes("velas") && !i.includes("caldera")){
-        console.log(i);
+        newCoche.push(i);
     }
 }
+console.log(newCoche);
 console.log("-------------------------");
 
 //Devuelve sólo aquellos elementos de este arreglo que contengan la letra A (mayúscula o minúscula)
