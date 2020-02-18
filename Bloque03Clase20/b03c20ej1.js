@@ -6,7 +6,10 @@
 */
 
 //tu código va aquí vvv
-
+const alumnos = ["Mariana", "Jorge", "Gaby"]
+for(let i of alumnos){
+    console.log(i);
+}
 //tu código va aquí ^^^
 
 //eof
