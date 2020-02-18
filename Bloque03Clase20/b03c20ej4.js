@@ -52,7 +52,7 @@ console.log("-------------------------");
 //Devuelve sólo aquellos elementos de este arreglo que contengan la letra A (mayúscula o minúscula)
 const palabras = ["Gokú", "Vegeta", "Pikoro", "Bulma", "Gohan", "Yamcha", "Shen Long", "Freezer", "Ten Shin Han", "Androide 18"];
 for(i of palabras){
-    if(i.indexOf("a")>-1){
+    if(i.indexOf("a") >- 1 || i.indexOf("A") >- 1){
         console.log(i);
     }
 }
