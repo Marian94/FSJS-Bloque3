@@ -14,8 +14,9 @@ const a = function (a, b){
 }
 let b = a(1,3);
 console.log(b);
-const arr = [a(5,6)];
-console.log(arr);
+const arr = [];
+arr.push(a);
+console.log(arr[0](2,6));
 //tu código va aquí ^^^
 
 //eof
