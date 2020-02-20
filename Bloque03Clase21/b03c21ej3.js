@@ -10,7 +10,9 @@
 
 //tu código va aquí vvv
 function consonante(palabra, vocal){
-    const vocales = /[aeiouAEIOU]/gi;
+    const vocales = /[aeiou]/gi;
+    const consonantes = /[^aeiou\W]/gi
+    palabra = palabra.toLowerCase();
     let letras = ``;
     let suma = 0;
     if(vocal){
@@ -24,7 +26,7 @@ function consonante(palabra, vocal){
     }else{
         letras += `consonantes (`
         for(let i = 0; i<= palabra.length-1; i++){
-            if(!vocales.test(palabra.charAt(i))){
+            if(consonantes.test(palabra.charAt(i))){
                 suma++;
                 letras += palabra.charAt(i) ;
             }
