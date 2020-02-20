@@ -9,6 +9,13 @@
 
 //tu código va aquí vvv
 
+const a = function (a, b){
+   return a + b;
+}
+let b = a(1,3);
+console.log(b);
+const arr = [a(5,6)];
+console.log(arr);
 //tu código va aquí ^^^
 
 //eof

@@ -10,7 +10,8 @@
 function printArray() {
 
     if(true) {
-        let c = ["hola", "soy", "un", "ejercicio", "sobre", "hoisting"];
+        //Realizamos hoisting utilizando la variable tipo var
+        var c = ["hola", "soy", "un", "ejercicio", "sobre", "hoisting"];
     }
 
     for(let i of c) {

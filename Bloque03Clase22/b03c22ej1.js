@@ -6,7 +6,7 @@
 
 //tu código va aquí vvv
 
-function saludar() {
+function saludar(nombre = "Mariana", edad = "25", ciudad = "Zapopan", oficio = "desarrollador de software", juego = "Zelda") {
     console.log(`¡Hola! Soy ${nombre}, tengo ${edad} años, nací en ${ciudad}, me dedico a ${oficio} y mi juego favorito es ${juego}.`);
 }
 
