@@ -7,6 +7,26 @@
 */
 
 //tu código va aquí vvv
+function suma(a, b){
+    return a + b;
+}
+function resta(a, b){
+    return a - b;
+}
+function multiplicacion(a, b){
+    return a * b;
+}
+function division(a, b){
+    return a / b;
+}
+let arreglo = [];
+arreglo.push(suma(2,3));
+arreglo.push(resta(-1,-5));
+arreglo.push(multiplicacion(7,120));
+arreglo.push(division(6,3));
+
+
+
 
 //tu código va aquí ^^^
 
