@@ -1,6 +1,6 @@
 /*
     Este ejercicio debe correr en Chrome.
-    Necesitarás ejercicio1.html.
+    Necesitarás b03c14ej1.html.
 
     Dentro de la función messageClick,
     Agrega código para pedir su nombre al usuario,
