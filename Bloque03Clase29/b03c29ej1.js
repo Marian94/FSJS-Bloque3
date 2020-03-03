@@ -7,7 +7,7 @@
     En el objeto hijo, crea una función con el mismo nombre que alguna función en el padre,
     pero que tenga diferente contenido.
 
-	Comprueba que al llamar a esta función desde el hijo con y sin super, ambos comportamientos son accesibles.
+    Comprueba que al llamar a esta función desde el hijo con y sin super, ambos comportamientos son accesibles.
 */
 
 //tu código va aquí vvv
