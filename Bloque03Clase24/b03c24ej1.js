@@ -8,6 +8,31 @@
 */
 
 //tu código va aquí vvv
+const nombreCompleto = {
+    nombre : "Mariana",
+    apellidoPaterno: "Gonzalez",
+    apellidoMaterno: "Romero" 
+
+};
+const domicilio = {
+    calle: "Juliana",
+    numero: "5644-A",
+    cp: "45234",
+    colonia: "Juliano"
+
+};
+const carrera = {
+    escuela : "CUCEI",
+    ciudad: "Tlaquepaque",
+    carrera: "Ing. en computacion",
+    egreso : "2018-A"
+};
+const datosPersonales = {
+    nombrePersona: nombreCompleto,
+    domicilioPersona: domicilio,
+    carreraPersona: carrera
+}
+console.log(datosPersonales);
 
 //tu código va aquí ^^^
 
