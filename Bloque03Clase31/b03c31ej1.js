@@ -9,6 +9,7 @@
 */
 
 //tu código va aquí vvv
+//Lista de super heroes
 const avengers = [
     {
         "nombre": "Superhéroe",
@@ -42,37 +43,45 @@ const avengers = [
         "primerapeli": "Iron Man 2"
     }
 ];
-
+//creamos una tabla a traves de manipular el DOM
 const mitabla = document.createElement("table");
+//añadimos el estilo
 mitabla.style.setProperty("border", "5px solid red");
 
+//declaramos las filas
 const tableRows = [];
 
 let row, col, txt;
-
+//creamos la celda de cada super heroe
 for(let i=0; i<avengers.length; i++) {
-
+    //declaramos cada fila
     row = document.createElement("tr");
-    row.style.setProperty("border", "5px solid red");
+    //declaramos su estilo
+    row.style.setProperty("border", "5px solid blue");
+    //la añadimos a la tabla
     tableRows.push(row);
-
+    //recorremos los atributos de cada super heroe
     for(let prop in avengers[i]) {
 
         if(i===0) {
+            //creamos la cabecera (titulo)solo una vez
             col = document.createElement("th");
         }else {
+            //creamos las celdas
             col = document.createElement("td");
         }
-
-        col.style.setProperty("border", "5px solid red");
+        //añadimos el estilo de las celdas
+        col.style.setProperty("border", "5px solid green");
+        //dentro de las celdas añadiremos el contenido del objeto (texto)
         txt = document.createTextNode(avengers[i][prop]);
         col.appendChild(txt);
+        //añadimos las celdas a las columnas
         tableRows[i].appendChild(col);
     }
-
+    //terminamos la tabla
     mitabla.appendChild(tableRows[i]);
 }
-
+//añadimos la tabla dentro del objeto div que tiene un id "body"
 const el_body = document.getElementById("body");
 el_body.appendChild(mitabla);
 
