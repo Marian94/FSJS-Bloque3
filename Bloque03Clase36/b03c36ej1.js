@@ -43,4 +43,26 @@ validation (f);
 f = externa ("Chef");
 validation (f);
 //tu código va aquí ^^^
+/**
+const s = {
+    "border" : "1px solid blue";
+    "color": green;
+};
+function createDivNode (style){
+    const divNode =document.createElement("div");
+    for(let p in style){
+        divNode.style.setProperty (p in style[p]);
+    }
+    const textNode = document.createTextNode("");
+    divNode.appendChild(textNode);
+    return function setContent(text){
+        textNode.data = text;
+        return divNode;
+    }
+}
+
+const custom_div_creator = createDivNode(s);
+const un_div = custom_div_creator("hola mundo");
+const otro_div = custom_div_creator("gatito perturbado");
+ */
 //eof
