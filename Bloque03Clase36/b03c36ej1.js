@@ -64,5 +64,24 @@ function createDivNode (style){
 const custom_div_creator = createDivNode(s);
 const un_div = custom_div_creator("hola mundo");
 const otro_div = custom_div_creator("gatito perturbado");
+------------------------------------------------------------
+
+function number (){
+    let myNumber = 999;
+    return {
+        getNum: function (){
+            console.log(myNumber);
+            return myNumber;
+        },
+        setNum: function (newNumber){
+            myNumber = newNumber;
+        }
+    }
+}
+let num = number();
+num.getNum(); // 999
+num.setNum(567); //change the number to 567
+num.getNum(); //567
  */
+
 //eof
