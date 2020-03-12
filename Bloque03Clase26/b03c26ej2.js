@@ -28,7 +28,7 @@ const libroFavorito = (state) => ({
     }
 });
 //declaramos una funcion persona con las propiedades de la misma
-function Persona (nombre, apellido, edad, sexo, musica, libros, hobbies){
+function Persona (nombre, apellido, edad, sexo){
     //se crea un objeto persona
     let person = {
         nombre,
