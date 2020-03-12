@@ -76,7 +76,7 @@ THAT EN OBJETOS Y CLASES
      }
  }
 ------------------------------------------
-BIND --> PROPIEDAD DE LAS FUNCIONES
+BIND --> PROPIEDAD DE LAS FUNCIONES, REGRESA UNA NUEVA FUNCION
 const obj ={
     "name" : "Mariana",
     "ejemplo" : function(){
@@ -85,8 +85,37 @@ const obj ={
 }
 obj.ejemplo(); //imprime Mariana
 const otroNombre = obj.ejemplo.bind({"name":"German"});
-otroNombre(); //imprime German
+otroNombre(); //imprime German   AQUI REGRESA LA NUEVA FUNCION
 -----------------------------------------
+CALL --> A DIFERENCIA DE BIND ES QUE ESTE NO REGRESA UNA NUEVA FUNCION, SE EJECUTA INMEDIATAMENTE
+const obj ={
+    "name" : "Mariana",
+    "ejemplo" : function(){
+        console.log(this.name)
+    }
+}
+obj.ejemplo(); //imprime Mariana
+const otroNombre = obj.ejemplo.call({"name":"German"}); //imprime German  SE EJECUTA DIRECTAMENTE
+
+const obj2 ={
+    "name" : "Mariana",
+    "saludarODespedir" : function(str1, str2){
+        console.log(`${str1} ${this.name} ${str2}`);
+    }
+}
+obj2.saludarODespedir("Hola soy", "Mucho gusto!"); //imprime "Hola soy Mariana Mucho gusto!"
+const otroSaludo = obj.saludarODespedir.call({"name":"German"}, "Yo soy", "Hasta luego"); //imprime "Yo soy German Adios"  SE EJECUTA DIRECTAMENTE Y LOS ARGUMENTOS SE PASAN COMO NUEVOS PARAMETROS
+
+-----------------------------------------
+APPLY --> SE EJECUTA INMEDIATAMENTE Y SUS ARGUMENTOS VAN EN EL SEGUNDO PARAMETRO DENTRO DE ARREGLOS
+const obj ={
+    "name" : "Mariana",
+    "saludarODespedir" : function(str1, str2){
+        console.log(`${str1} ${this.name} ${str2}`);
+    }
+}
+obj.ejemplo("Hola soy", "Mucho gusto!"); //imprime "Hola soy Mariana Mucho gusto!"
+const otroNombre = obj.ejemplo.call({"name":"German"}, ["Yo soy", "Hasta luego"]); //imprime "Yo soy German Adios"  SE EJECUTA DIRECTAMENTE Y LOS ARGUMENTOS SE PASAN DENTRO DE UN ARREGLO
 
 
 */
