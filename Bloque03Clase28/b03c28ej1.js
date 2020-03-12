@@ -28,6 +28,7 @@ class Hobbies extends Persona {
         console.log(`Tengo ${this.edad} años y esta propiedad es heredada de la clase Persona, y me gusta ${this.hobbie}, este hobbie viene directo de la clase Hobbies`)
     }
 }
+
 const obj = new Hobbies("Felting");
 obj.nombre = "Mariana";
 obj.edad = 25;
