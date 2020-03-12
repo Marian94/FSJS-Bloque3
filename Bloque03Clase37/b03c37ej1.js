@@ -104,7 +104,7 @@ const obj2 ={
     }
 }
 obj2.saludarODespedir("Hola soy", "Mucho gusto!"); //imprime "Hola soy Mariana Mucho gusto!"
-const otroSaludo = obj.saludarODespedir.call({"name":"German"}, "Yo soy", "Hasta luego"); //imprime "Yo soy German Adios"  SE EJECUTA DIRECTAMENTE Y LOS ARGUMENTOS SE PASAN COMO NUEVOS PARAMETROS
+const otroSaludo = obj2.saludarODespedir.call({"name":"German"}, "Yo soy", "Hasta luego"); //imprime "Yo soy German Adios"  SE EJECUTA DIRECTAMENTE Y LOS ARGUMENTOS SE PASAN COMO NUEVOS PARAMETROS
 
 -----------------------------------------
 APPLY --> SE EJECUTA INMEDIATAMENTE Y SUS ARGUMENTOS VAN EN EL SEGUNDO PARAMETRO DENTRO DE ARREGLOS
@@ -114,9 +114,19 @@ const obj ={
         console.log(`${str1} ${this.name} ${str2}`);
     }
 }
-obj.ejemplo("Hola soy", "Mucho gusto!"); //imprime "Hola soy Mariana Mucho gusto!"
-const otroNombre = obj.ejemplo.call({"name":"German"}, ["Yo soy", "Hasta luego"]); //imprime "Yo soy German Adios"  SE EJECUTA DIRECTAMENTE Y LOS ARGUMENTOS SE PASAN DENTRO DE UN ARREGLO
+obj.saludarODespedir("Hola soy", "Mucho gusto!"); //imprime "Hola soy Mariana Mucho gusto!"
+const otroSaludo = obj.saludarODespedir.apply({"name":"German"}, ["Yo soy", "Hasta luego"]); //imprime "Yo soy German Adios"  SE EJECUTA DIRECTAMENTE Y LOS ARGUMENTOS SE PASAN DENTRO DE UN ARREGLO
 
+SPREAD
+const obj2 ={
+    "name" : "Mariana",
+    "saludarODespedir" : function(str1, str2){
+        console.log(`${str1} ${this.name} ${str2}`);
+    }
+}
+let a = ["Yo soy", "Hasta luego"]
+obj2.saludarODespedir("Hola soy", "Mucho gusto!"); //imprime "Hola soy Mariana Mucho gusto!"
+const otroSaludo = obj2.saludarODespedir.call({"name":"German"}, ...a); //imprime "Yo soy German Adios"  SE EJECUTA DIRECTAMENTE Y LOS ARGUMENTOS SE PASAN DENTRO DE UN ARREGLO
 
 */
 
