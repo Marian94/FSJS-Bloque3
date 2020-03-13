@@ -16,13 +16,21 @@ const { readFile } = require('fs');
 
 //tu código va aquí vvv
 
-const mi_archivo = "";
+const mi_archivo = "mi_archivo.txt";
 
 function miCallback(err, data) {
+    //Si por alguna razon el documento no pudo ser leido, se arroja un error
+    if (err) throw err;
+    //en caso contrario se muestra el contenido del archivo (data)
+    console.log(data);
     //completar esto
 }
-
-fs.readFile(mi_archivo, /*aquí falta algo...*/);
+//Se llama una funcion que lee un archivo de texto, lo codifica con utf8 (estandar para caracteres)
+//Despues en el archivo obtiene 2 parametros err (errores) y datos (contenido)
+readFile(mi_archivo, 'utf8', (err, data) => {
+    //Con los 2 parametros, se envian a la funcion de miCallback
+    miCallback(err,data);
+  });
 
 //tu código va aquí ^^^
 
