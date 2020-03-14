@@ -33,8 +33,6 @@ let funcionRecursiva = function (arr, numero, inicio, fin) {
 
     return (arr[mid] > numero) ?  funcionRecursiva(arr, numero, inicio, mid-1) :  funcionRecursiva(arr, numero, mid+1, fin); 
 } 
-   
-// Driver code 
 let arr = [1, 3, 5, 7, 9, 11, 15, 17, 19, 21]; 
 let numero = 5; 
    
