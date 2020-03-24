@@ -10,7 +10,19 @@
 */
 
 //tu código va aquí vvv
+function mostrar(edad, nombre, mascota, hobbie, trabajo){
+    console.log(`
+    HOLA ${nombre}, tienes ${edad} años, tienes ${mascota} de mascota.
+    Tu hobbie es ${hobbie} y trbajas como ${trabajo}
+    Edad hace 3 años ${edad-3}`);
+}
+const arr1  = [, "Armando", "tortuga", "bailar", "mercante"];
+const arr2  = [25, "Mariana", "erizo", "", "developer"];
+const arr3  = [27, "Toño", "perro", "dibujar"];
 
+mostrar(...arr1);
+mostrar(...arr2);
+mostrar(...arr3);
 //tu código va aquí ^^^
 
 //eof
