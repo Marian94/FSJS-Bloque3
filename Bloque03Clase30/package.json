@@ -1,0 +1,16 @@
+{
+  "name": "Bloque03Clase30",
+  "version": "1.0.0",
+  "description": "",
+  "main": "b03c30ej1.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.0"
+  }
+}

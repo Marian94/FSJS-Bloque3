@@ -13,6 +13,12 @@
 
 //tu código va aquí vvv
 
+module.exports = {
+    sumaPositiva(a,b){
+        return a + b;
+    }
+};
+
 //tu código va aquí ^^^
 
 //eof
