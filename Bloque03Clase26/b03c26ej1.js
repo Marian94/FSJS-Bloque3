@@ -14,19 +14,24 @@ class Persona {
         this.apellido = apellido;
         this.edad = edad;
     }
+    comer(){
+        console.log("Hola, una persona come")
+    }
 }
 
 class Mujer extends Persona {
-    constructor() {
-        super();
-        this.sexo = "Femenino";
+    constructor(nombre, apellido, edad, sexo) {
+        super(nombre, apellido, edad);
+        this.sexo = sexo;
+    }
+    parir(){
+        console.log("Una mujer puede parir")
     }
 }
-const m = new Mujer();
-m.nombre ="Mariana"
-m.apellido="Gonzalez";
-m.edad = 25;
+const m = new Mujer("Mariana", "Gonzalez", 25, "Femenino");
 console.log(m);
+m.parir();
+m.comer();
 //tu código va aquí ^^^
 
 //eof
